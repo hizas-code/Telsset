@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
+});
+
+Route::post('/login', function () {
+    return redirect('index');
+});
+
+route::get('index', function (){
+   return view('index');
+});
+
+route::get('complain', function(){
+    return view('complain');
 });
